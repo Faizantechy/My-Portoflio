@@ -2,7 +2,7 @@ import React from "react";
 
 const Experience = () => {
   return (
-    <div className="w-full h-full lg:mt-[9rem]  mt-[6rem] flex justify-evenly lg:px-4 lg:space-x-0 space-x-5 lg:mr-0 mr-7">
+    <div className="w-full h-full lg:mt-[9rem]  mt-[6rem] flex lg:justify-evenly justify-center  lg:flex-row flex-col">
       <div
         className="sec1 text-center border-r-2 lg:px-0 px-3 border-white w-[180px] sm:w-[200px] lg:w-[300px] mb-6 lg:mb-0 hover:scale-[1.1] delay-200 transition-all"
       >
