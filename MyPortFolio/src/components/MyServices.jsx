@@ -3,7 +3,7 @@ import React from "react";
 const MyServices = () => {
   return (
     <div className="w-full h-full px-4 mt-[7rem] mx-auto">
-      <h1 className="text-5xl font-bold text-center">My Services</h1>
+      <h1 className="lg:text-5xl text-4xl font-bold text-center">My Services</h1>
 
       <div className="cards mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
         <div className="card w-full sm:h-[250px] lg:h-[300px] h-auto shadow-md shadow-gray-400 rounded-xl bg-transparent px-5 py-6 space-y-3 transform hover:scale-[1.05] delay-200 transition-all hover:bg-orange-950 hover:border-[4px] hover:border-pink-600">

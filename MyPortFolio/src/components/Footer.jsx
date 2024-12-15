@@ -15,7 +15,7 @@ const Footer = () => {
 
           <div className="part2 flex flex-col lg:flex-row gap-3 items-center lg:w-[50%]">
             <div className="flex w-full gap-3 items-center">
-              <div className="input-box w-[60%] lg:w-[200px] px-3 py-1 lg:px-5 lg:py-2 rounded-xl bg-gray-800 flex items-center">
+              <div className="input-box  lg:w-[60%]  w-[55%] px-3 py-1 lg:px-5 lg:py-2 rounded-xl bg-gray-800 flex items-center">
                 <i className="ri-user-6-line text-xl font-bold"></i>
                 <input
                   type="email"
@@ -25,7 +25,7 @@ const Footer = () => {
               </div>
 
               <div className="button">
-                <button className="primary-bg rounded-full px-7 py-3 hover:scale-[90%] text-white font-bold active:scale-[90%] mt-2 lg:mt-0">
+                <button className="primary-bg rounded-full lg:px-7 px-4 py-3 hover:scale-[90%] text-white font-bold active:scale-[90%] mt-2 lg:mt-0">
                   Subscribe
                 </button>
               </div>
@@ -38,11 +38,12 @@ const Footer = () => {
         <div className="copyright flex flex-col lg:flex-row justify-between mt-4 w-full text-[17px]">
           <p className="text-semibold">© 2023 Alex Bennett. All rights reserved.</p>
 
-          <div className="links list-none flex flex-col lg:flex-row gap-4 text-semibold mt-3 lg:mt-0">
-            <li>Term of Services</li>
-            <li>Privacy Policy</li>
-            <li>Connect with me</li>
-          </div>
+          <div className="div list-none flex lg:flex-row flex-col lg:text-start text-center lg:space-y-0 space-y-7 mt-10 font-semibold">
+
+            <li className="hover:text-gray hover:scale-90 duration-75 delay-75">Term of Services</li>
+            <li className="hover:text-gray hover:scale-90 duration-75 delay-75">Privacy Policy</li>
+            <li className="hover:text-gray hover:scale-90 duration-75 delay-75">Connect with me</li>
+            </div>
         </div>
       </div>
     </>

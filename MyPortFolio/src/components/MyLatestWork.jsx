@@ -24,14 +24,14 @@ const MyLatestWork = () => {
 
   return (
     <div className="w-full h-full mt-12">
-      <h1 className="text-5xl font-bold text-center">My Latest Work</h1>
+      <h1 className="lg:text-5xl text-4xl font-bold text-center">My Latest Work</h1>
 
-      <div className="cards mt-8 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-center w-full h-full p-[5%]">
+      <div className="cards mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-center w-full h-full p-[5%]">
         {images.map((item) => {
           return (
             <a href={item.link} target="_blank" key={item.id} rel="noopener noreferrer">
               <div
-                className="card w-full h-[200px] sm:h-[220px] lg:h-[230px] shadow-md shadow-gray-400 rounded-xl bg-transparent px-5 py-6 space-y-3 transform hover:scale-[1.05] delay-200 transition-all hover:border-[4px] hover:border-pink-600"
+                className="card w-full h-[250px] sm:h-[270px] lg:h-[230px] shadow-md shadow-gray-400 rounded-xl bg-transparent px-5 py-6 space-y-3 transform hover:scale-[1.05] delay-200 transition-all hover:border-[4px] hover:border-pink-600"
                 style={{
                   backgroundImage: `url(${item.src})`,
                   backgroundSize: "cover",
