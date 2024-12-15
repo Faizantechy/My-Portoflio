@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: black;
+  color: white;
+}
+
+/* Define custom CSS variables for colors */
+:root {
+  --primary-bg-gradient: linear-gradient(to right, #ff6699, #ffcc99);
+  --text-gradient: linear-gradient(to right, #ec4899, #f43f5e, #f77f00);
+}
+
+/* Use the custom variables in your classes */
+.primary-bg {
+  background: var(--primary-bg-gradient); /* Use the custom gradient for background */
+}
+
+.text-color {
+  background: var(--text-gradient); /* Use the custom gradient for text */
+  -webkit-background-clip: text; /* Clip the gradient to text */
+  -webkit-text-fill-color: transparent; /* Make the text transparent to show the gradient */
+}
+
+
+.hover-gradient {
+  @apply bg-gradient-to-r from-pink-500 to-orange-500;
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: background-position 0.5s ease;
+}
+
+.hover-gradient:hover {
+  background-position: left bottom;
+}
+
+.active {
+  border-bottom: 2px solid pink;
+}
+
+.hamburger {
+  position: relative;
+  z-index: 10; /* Higher than content */
+}
+.logo {
+  position: relative;
+  z-index: 10; /* Higher than content */
+}
+.links {
+  position: fixed;
+  z-index: 2000; /* Ensure it is above other elements */
+}
