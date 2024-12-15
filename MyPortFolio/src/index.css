@@ -7,21 +7,18 @@ body {
   color: white;
 }
 
-/* Define custom CSS variables for colors */
 :root {
   --primary-bg-gradient: linear-gradient(to right, #ff6699, #ffcc99);
   --text-gradient: linear-gradient(to right, #ec4899, #f43f5e, #f77f00);
 }
 
-/* Use the custom variables in your classes */
 .primary-bg {
-  background: var(--primary-bg-gradient); /* Use the custom gradient for background */
+  background: var(--primary-bg-gradient); 
 }
 
 .text-color {
-  background: var(--text-gradient); /* Use the custom gradient for text */
-  -webkit-background-clip: text; /* Clip the gradient to text */
-  -webkit-text-fill-color: transparent; /* Make the text transparent to show the gradient */
+  background: var(--text-gradient); 
+  -webkit-text-fill-color: transparent;
 }
 
 
@@ -42,13 +39,13 @@ body {
 
 .hamburger {
   position: relative;
-  z-index: 10; /* Higher than content */
+  z-index: 10; 
 }
 .logo {
   position: relative;
-  z-index: 10; /* Higher than content */
+  z-index: 10; 
 }
 .links {
   position: fixed;
-  z-index: 2000; /* Ensure it is above other elements */
+  z-index: 2000;
 }

@@ -35,10 +35,10 @@ const Footer = () => {
 
         <div className="line w-[87%] mt-5 bg-white rounded-xl h-[3px]"></div>
 
-        <div className="copyright flex flex-col lg:flex-row justify-between mt-4 w-full text-[17px]">
+        <div className="copyright flex flex-col lg:flex-row justify-evenly mt-4 w-full text-[17px] items-center lg:p-0 p-[5%] lg:space-x-5">
           <p className="text-semibold">© 2023 Alex Bennett. All rights reserved.</p>
 
-          <div className="div list-none flex lg:flex-row flex-col lg:text-start text-center lg:space-y-0 space-y-7 mt-10 font-semibold">
+          <div className="div list-none flex lg:flex-row flex-col lg:text-start text-center lg:space-y-0 space-y-7 mt-10 font-semibold  lg:mr-12 lg:space-x-5">
 
             <li className="hover:text-gray hover:scale-90 duration-75 delay-75">Term of Services</li>
             <li className="hover:text-gray hover:scale-90 duration-75 delay-75">Privacy Policy</li>
